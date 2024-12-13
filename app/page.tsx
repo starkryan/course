@@ -2,13 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
-
-
 import { ToastContainer } from 'react-toastify'; // For notifications
 import Head from 'next/head'; // For SEO
-
-import { TypeAnimation } from 'react-type-animation'; // For typing animation
 import 'react-toastify/dist/ReactToastify.css'; // Import Toastify styles
 import { DiLinux } from 'react-icons/di';
 import { FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJs, FaAndroid, FaGit, FaUbuntu,} from 'react-icons/fa';
@@ -23,7 +18,7 @@ import CourseReviews from './components/Review';
 import Footer from './components/Footer';
 
 const HackingCoursePage = () => {
-  const [windowSize, setWindowSize] = React.useState({
+  const [, setWindowSize] = React.useState({
     height: 0,
     width: 0
   });
@@ -157,7 +152,7 @@ const HackingCoursePage = () => {
       whileInView={{ y: 0, opacity: 1 }}
       className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent"
     >
-      Technologies You'll Master
+      Technologies You&apos;ll Master
     </motion.h2>
 
     {/* Technology Categories */}

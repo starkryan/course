@@ -53,6 +53,7 @@ export const metadata: Metadata = {
     description: "Master ethical hacking and cybersecurity with AI-powered tools and techniques.",
     images: ["/og-image.jpg"], // Same as OG image
   },
+  metadataBase: new URL("https://yourdomain.com"),  // Replace with your actual domain
 };
 
 export default function RootLayout({
