@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-import { FaRegLightbulb } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -9,7 +8,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref } = useInView({ threshold: 0.1 });
 
   // Handle scroll effect
   useEffect(() => {

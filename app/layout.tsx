@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "network security",
     "security certification"
   ],
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "David Lee" }],
   openGraph: {
     title: "Ethical Hacking with AI - Master Cybersecurity",
     description: "Master ethical hacking and cybersecurity with AI-powered tools and techniques.",

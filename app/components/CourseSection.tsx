@@ -6,10 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Rubik } from 'next/font/google';
 import { useInView } from "react-intersection-observer";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
 import VanillaTilt from 'vanilla-tilt';
-import type { Engine } from "tsparticles-engine"
+
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -30,22 +28,14 @@ const useTilt = (options = {}) => {
         ...options,
       });
     }
-    return () => {
-      if (tiltRef.current?.vanillaTilt) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        tiltRef.current.vanillaTilt.destroy();
-      }
-    };
+   
   }, [options]);
 
   return tiltRef;
 };
 
 const CourseSection = () => {
-  const particlesInit = async (main: Engine) => {
-    await loadFull(main);
-  };
-
+  
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -57,33 +47,7 @@ const CourseSection = () => {
 
   return (
     <section className={`text-center py-8 md:py-20 relative overflow-hidden  ${rubik.className} z-0`}>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          background: {
-            color: {
-              value: "#0f172a",
-            },
-          },
-          particles: {
-            number: { value: 30 },
-            color: { value: ["#22c55e", "#3b82f6"] },
-            opacity: { value: 0.2 },
-            size: { value: 2 },
-            move: {
-              enable: true,
-              speed: 0.5,
-            },
-            links: {
-              enable: true,
-              color: "#ffffff",
-              opacity: 0.08,
-            },
-          },
-        }}
-        className="absolute inset-0 -z-10"
-      />
+  
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center justify-center px-4 sm:px-6">
         {/* Image Section */}
