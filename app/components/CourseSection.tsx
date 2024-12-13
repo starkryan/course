@@ -77,8 +77,9 @@ const CourseSection = () => {
           className="text-center md:text-left space-y-3 md:space-y-6 px-3 md:px-0"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 md:mb-4 flex items-center justify-center md:justify-start bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">
-            <FaShieldAlt className="text-green-500 mr-2 md:mr-3 text-2xl md:text-3xl" />
-            <span className="leading-tight">Master Ethical Hacking <span className="block md:inline">with AI</span></span>
+            
+            <span className="leading-tight">Master Ethical Hacking <span className="block md:inline">with</span><span className="block md:inline text-green-700"> AI</span></span>
+            
           </h2>
 
           <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4 md:p-6 shadow-2xl">
@@ -98,14 +99,13 @@ const CourseSection = () => {
             />
           </div>
 
-          <p className="text-gray-300 text-base md:text-lg leading-relaxed font-rubik px-2 md:px-0">
+          {/* <p className="text-gray-300 text-base md:text-lg leading-relaxed font-rubik px-2 md:px-0">
             Dive into the future of cybersecurity with our AI-enhanced ethical hacking course. 
-            Learn cutting-edge techniques in penetration testing, threat detection, and 
-            security automation using artificial intelligence.
-          </p>
+            Learn cutting-edge techniques in penetration testing
+          </p> */}
 
           {/* Feature Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
             <motion.div
               ref={cardRef1}
               whileHover={{ scale: 1.05 }}
@@ -123,7 +123,7 @@ const CourseSection = () => {
               <FaCertificate className="text-green-400 text-2xl md:text-3xl mr-2 md:mr-3" />
               <span className="text-gray-100 font-medium text-sm md:text-base">Industry Certification</span>
             </motion.div>
-          </div>
+          </div> */}
 
           {/* Button */}
           <motion.button

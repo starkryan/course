@@ -81,16 +81,18 @@ const HackingCoursePage = () => {
   transition={{ duration: 1 }}
   ref={sectionRef}
   id="course-overview"
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true, amount: 0.1 }}  // Trigger animation when 10% of section is in view
 >
   {/* Background Effect */}
   <div className="absolute inset-0 opacity-20">
-    <div className="absolute inset-0 bg-[linear-gradient(45deg,#0f172a_25%,transparent_25%,transparent_75%,#0f172a_75%,#0f172a),linear-gradient(45deg,#0f172a_25%,transparent_25%,transparent_75%,#0f172a_75%,#0f172a)] bg-[length:40px_40px] bg-[position:0_0,20px_20px]" />
+    <div className="absolute inset-0 bg-[linear-gradient(45deg,#0f172a_25%,transparent_25%,transparent_75%,#0f172a_75%,#0f172a)] bg-[length:40px_40px] bg-[position:0_0,20px_20px]" />
   </div>
 
   <div className="container mx-auto relative z-10">
     <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ y: 20, opacity: 0 }}  // Slightly off-screen, but closer to view
+      whileInView={{ y: 0, opacity: 1 }}  // Bring into view immediately
       transition={{ duration: 0.8 }}
       className="max-w-3xl mx-auto text-center mb-16"
     >
@@ -136,6 +138,7 @@ const HackingCoursePage = () => {
     </div>
   </div>
 </motion.section>
+
 
 {/* Technologies Section */}
 <motion.section
