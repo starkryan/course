@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaShieldAlt, FaRobot, FaCertificate, FaArrowRight } from "react-icons/fa";
+// import { FaShieldAlt, FaRobot, FaCertificate, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Rubik } from 'next/font/google';
@@ -42,8 +43,8 @@ const CourseSection = () => {
   });
 
   const tiltRef = useTilt();
-  const cardRef1 = useTilt({ max: 15, scale: 1.05 });
-  const cardRef2 = useTilt({ max: 15, scale: 1.05 });
+  // const cardRef1 = useTilt({ max: 15, scale: 1.05 });
+  // const cardRef2 = useTilt({ max: 15, scale: 1.05 });
 
   return (
     <section className={`text-center py-8 md:py-20 relative overflow-hidden  ${rubik.className} z-0`}>
