@@ -130,9 +130,9 @@ const CourseSection = () => {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="relative w-full sm:w-auto px-4 sm:px-6 py-3 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl overflow-hidden group mt-4"
+            className="relative w-full sm:w-auto px-4 sm:px-6 py-3 bg-gradient-to-r from-pink-600 to-pink-600 rounded-xl overflow-hidden group mt-4"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <Link 
               href="https://pmny.in/PAYUMN/vIGl9oaANtbt" 
               className="relative flex items-center justify-center"

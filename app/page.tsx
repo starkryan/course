@@ -16,6 +16,7 @@ import CourseSection from './components/CourseSection';
 import WhatYouWillLearn from './components/WhatYouLearn';
 import CourseReviews from './components/Review';
 import Footer from './components/Footer';
+import Lesson from './components/Lesson';
 
 const HackingCoursePage = () => {
   const [, setWindowSize] = React.useState({
@@ -138,6 +139,7 @@ const HackingCoursePage = () => {
     </div>
   </div>
 </motion.section>
+<Lesson  title={''} duration={''} difficulty={'Beginner'} />
 
 
 {/* Technologies Section */}
